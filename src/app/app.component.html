@@ -1,0 +1,37 @@
+<div class="jumbotron">
+  <div class="container">
+
+    <h1>
+      <i class="fa fa-microchip" aria-hidden="true"></i>
+      Device Name
+      <!-- <i class="fa fa-circle" aria-hidden="true"></i>
+      <i class="fa fa-circle" aria-hidden="true"></i> -->
+    </h1>
+
+
+  </div>
+
+
+
+</div>
+
+<div >
+  <ngb-alert [type]="'success'" [dismissible]="false">{{ message }}</ngb-alert>
+</div>
+
+
+<div  class="jumbotron" [ngStyle]="{'background-color':checkBox?'#aad87b':'#feaf5b'}">
+
+    <div class="d-flex justify-content-center">
+
+      <ui-switch (change)="check($event)" [(ngModel)]="checkBox"></ui-switch>
+    </div>
+
+<!-- <div class="jumbotron" *ngIf="checkBox">
+
+    <div class="d-flex justify-content-center">
+
+      <ui-switch (change)="check($event)"></ui-switch>
+  </div>
+</div> -->
+</div>
